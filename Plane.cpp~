@@ -1,0 +1,34 @@
+#include "Plane.h"
+
+#include "utility.h"
+
+Plane::Plane() : Object() {
+
+}
+
+Plane::Plane(const Plane& plane) : Object(plane) {
+
+}
+
+Plane::~Plane() {
+
+}
+
+const Plane& Plane::operator=(const Plane& plane) {
+	if (this != &plane) {
+		Object::operator=(plane);
+	}
+	return *this;
+}
+
+std::vector<RayIntersection> Plane::intersect(const Ray& ray) const {
+
+	std::vector<RayIntersection> result;
+
+	/******************************************************
+	 * Code to compute Ray-Plane intersections goes here. *
+	 ******************************************************/
+
+
+	return result;
+}
